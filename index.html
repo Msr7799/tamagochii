@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/tamagotchi/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tamagotchi</h1>
+    </header>
+    <main>
+        <section class="button-wrapper">
+            <button id="play">Play</button>
+            <button id="feed">Feed</button>
+            <button id="sleep">Sleep</button>
+        </section>
+        <section class="stats-wrapper">
+            <p>Boredom: <span id="boredom-stat">0</span></p>
+            <p>Hunger: <span id="hunger-stat">0</span></p>
+            <p>Sleepiness: <span id="sleepiness-stat">0</span></p>
+        </section>
+        <section class="game-state-wrapper">
+            <h2 id="message" class="hidden">Oh no! You Lose!</h2>
+            <img class="game-graphic" alt="spoild tomato" src="/assets/tomato.png" />
+            <button id="restart" class="hidden">Play Again</button>
+        </section>
+    </main>
+</body>
+</html>
